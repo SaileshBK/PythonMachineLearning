@@ -25,7 +25,7 @@ import joblib
 # Now, Model persistant
 
 # model = DecisionTreeClassifier()
-# model.fit(X,y)
+# model.fit(X.values,y.values)
 #joblib.dump(model,'movie-type.joblib')
 
 
