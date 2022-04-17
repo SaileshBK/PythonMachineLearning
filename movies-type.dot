@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="age <= 17.5\ngini = 0.768\nsamples = 17\nvalue = [3, 3, 6, 2, 3]\nclass = Animation", fillcolor="#d5f9f3"] ;
+1 [label="gini = 0.0\nsamples = 6\nvalue = [0, 0, 6, 0, 0]\nclass = Animation", fillcolor="#39e5c5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 27.5\ngini = 0.744\nsamples = 11\nvalue = [3, 3, 0, 2, 3]\nclass = Action", fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gender <= 0.5\ngini = 0.48\nsamples = 5\nvalue = [3, 0, 0, 2, 0]\nclass = Action", fillcolor="#f6d5bd"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0, 0, 0, 0]\nclass = Action", fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 2, 0]\nclass = Comedy", fillcolor="#3c39e5"] ;
+3 -> 5 ;
+6 [label="gender <= 0.5\ngini = 0.5\nsamples = 6\nvalue = [0, 3, 0, 0, 3]\nclass = Adventure", fillcolor="#ffffff"] ;
+2 -> 6 ;
+7 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 3]\nclass = Sci-Fi", fillcolor="#e539c0"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0]\nclass = Adventure", fillcolor="#7be539"] ;
+6 -> 8 ;
+}
