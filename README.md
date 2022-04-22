@@ -1,6 +1,6 @@
 # PythonMachineLearning
 Creating a Model, training the same Model and making prediction using pandas,sklearn and joblib.
-# our Data
+# Our Data
 ![d](https://user-images.githubusercontent.com/101400043/164683117-7c78f06d-5070-4949-a0e7-ffe607927018.PNG)
 # Output:
 When passing Female Age of 21
